@@ -439,6 +439,21 @@
 
 ![image](https://github.com/user-attachments/assets/aea71837-b397-4e5b-901f-4e4e841e4e54)
 
+
+  The Cov-bpl-lst-Summarization ETL pipeline is designed to process and summarize bikeways 
+  data from the City of Vancouver. It begins by extracting the dataset from the AWS Glue Data Catalog,
+  ensuring it is schema-aware and ready for transformation. A schema transformation step is applied first 
+  to standardize field names and data types, followed by a filter stage that removes unwanted or invalid 
+  records—such as those with null values or out-of-scope bikeway information. Once filtered, the data proceeds 
+  to an aggregation stage where key metrics are summarized, such as total bikeway lengths by type or year of construction.
+  To enable tracking and versioning, the current run timestamp is dynamically added to each record and then converted into
+  the local time zone format for regional consistency. Before export, the schema is adjusted again to ensure it matches 
+  the target structure, and the output is split into two branches: one that loads the clean, summarized data into 
+  a system-facing S3 bucket for integration, and another that formats and exports the dataset into a user-facing S3 bucket 
+  for reporting or public access. This dual-output design ensures that both internal systems and end users receive reliable 
+  and ready-to-use data. The ETL pipeline provides a robust, automated way to transform raw bikeways data into summarized 
+  insights that support informed urban planning and analysis.
+
 **ETL Pipeline - Quality Check**
 
 ![image](https://github.com/user-attachments/assets/a66e4447-54d3-4e71-a76b-474093b6bac7)
@@ -544,3 +559,5 @@
     codification—the platform can evolve into a more resilient and high-performing solution. 
     Continuous refinement will allow the City of Vancouver to maximize value from its 
     bikeway data and support forward-thinking, data-driven urban development.
+
+![image](https://github.com/user-attachments/assets/0fca0302-9136-47da-a4ca-1111dc795f3e)

@@ -566,6 +566,7 @@
 
 Portfolio
 
-This project is part of my broader Tech Leadership Portfolio, which includes cloud architecture, system design, and data analytics projects.
+This project is part of my broader Tech Portfolio, which includes cloud architecture, system design, and data analytics projects.
 
 View the full portfolio here:
+https://github.com/DeepaNatarajan08/portfolio

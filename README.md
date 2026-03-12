@@ -1,3 +1,4 @@
+
 **Cloud-Based Data Analytics Platform for Bikeways – City of Vancouver**
 
 **Objective:**
@@ -561,3 +562,10 @@
     bikeway data and support forward-thinking, data-driven urban development.
 
 ![image](https://github.com/user-attachments/assets/0fca0302-9136-47da-a4ca-1111dc795f3e)
+
+
+Portfolio
+
+This project is part of my broader Tech Leadership Portfolio, which includes cloud architecture, system design, and data analytics projects.
+
+View the full portfolio here:
